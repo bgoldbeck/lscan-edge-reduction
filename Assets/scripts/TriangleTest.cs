@@ -304,7 +304,11 @@ public class TriangleTest : MonoBehaviour
         }
         return true;
     }
-    public void StepThreePointFive()
+
+    /// <summary>
+    /// Sorting the edges that are contiguous into boundary groups/buckets.
+    /// </summary>
+    public void StepThreePartTwo()
     {
         // Add first bucket.
         UniqueEdgeList first_bucket = new UniqueEdgeList();
@@ -338,6 +342,16 @@ public class TriangleTest : MonoBehaviour
             }
         }
 
+        return;
+    }
+
+    /// <summary>
+    /// Determining the index of the outer most boundary 
+    /// from a list of bucket/grouped edges.
+    /// </summary>
+    public void StepThreePartThree()
+    {
+        // grouped_edges
         return;
     }
 }
