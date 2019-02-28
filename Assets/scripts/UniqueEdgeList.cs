@@ -6,6 +6,18 @@ public class UniqueEdgeList
 {
     public List<Edge> edgeList = new List<Edge>();
 
+    public UniqueEdgeList()
+    {
+    }
+
+    public UniqueEdgeList(UniqueEdgeList other)
+    {
+        foreach (Edge edge in other.edgeList)
+        {
+            this.Add(edge);
+        }
+    }
+
     public bool Add(Edge new_edge)
     {
         bool found = false;
